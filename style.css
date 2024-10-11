@@ -1,11 +1,58 @@
-.c1{
-    background-color: blueviolet;
-    text-align: center;
-    height: 10px;
-    padding: 50px;
-    color: aliceblue;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
-.c2{
-    width: 10px;
+
+tr {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+}
+
+.c1 {
+    text-align: left;
+    background-color: rgba(133, 133, 133, 0.637);
+    color: black;
+}
+
+.c2 {
+    width: 40px;
+    height: 500px;
+}
+
+.c3 {
+    width: 200px;
     height: 10px;
+}
+
+th {
+    padding: 10px
+}
+
+h2 {
+    color: green;
+    text-align: center;
+}
+
+.c6 {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+.c7{
+    display: inline-block;
+    color: yellow;
+}
+.c8{
+display: inline-block;
+color: grey;
 }
