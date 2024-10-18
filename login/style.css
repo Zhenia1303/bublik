@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right top, var( --dark-violet), var(--light-vilet));
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+}
+:root{
+    --dark-violet: rgb(66, 12, 116);
+    --light-vilet: rgb(182, 130, 230);
+}
+.input-login{
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px;
+    border-radius: 20px;
+}
+.input-password{
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px;
+    border-radius: 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+button{
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;  
+    border-radius: 20px;
+    color: white;  
+}
+form{
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to right top, var(--dark-violet), var(--light-vilet));
+    width: 350px;
+    height: 210px;
+    text-align: center;
+    border: 1px;
+    border-radius: 20px;
+}
+::placeholder{
+    color: white;
+
+}
