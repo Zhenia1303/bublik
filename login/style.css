@@ -46,6 +46,9 @@ button{
     border-radius: 20px;
     color: white;  
 }
+a{
+    color: white;
+}
 form{
     box-shadow: 0 10px 30px black;
     background: linear-gradient(to right top, var(--dark-violet), var(--light-vilet));
