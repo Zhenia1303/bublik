@@ -33,7 +33,7 @@ body{
     border-radius: 20px;
 }
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 button{
@@ -48,9 +48,6 @@ button{
     border: 1px;  
     border-radius: 20px;
     color: white;  
-}
-a{
-    color: white;
 }
 form{
     opacity: 0.7;
