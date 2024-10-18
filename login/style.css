@@ -11,6 +11,7 @@ body{
     --light-vilet: rgb(182, 130, 230);
 }
 .input-login{
+    opacity: 0.9;
     box-shadow: 0 10px 30px black;
     background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
     text-align: center;
@@ -21,6 +22,7 @@ body{
     border-radius: 20px;
 }
 .input-password{
+    opacity: 0.9;
     box-shadow: 0 10px 30px black;
     background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
     text-align: center;
@@ -35,6 +37,7 @@ a{
     text-decoration: none;
 }
 button{
+    opacity: 0.9;
     box-shadow: 0 10px 30px black;
     background: linear-gradient(to left top, var( --dark-violet), var(--light-vilet));
     width: 100px;
@@ -50,8 +53,8 @@ a{
     color: white;
 }
 form{
+    opacity: 0.7;
     box-shadow: 0 10px 30px black;
-    background: linear-gradient(to right top, var(--dark-violet), var(--light-vilet));
     width: 350px;
     height: 210px;
     text-align: center;
