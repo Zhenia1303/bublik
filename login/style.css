@@ -92,6 +92,7 @@ form {
 }
 
 .krug {
+    box-shadow: 0 5px 40px black;
     width: 300px;
     background: linear-gradient(to left top, var(--violet), var(--light-vilet));
     color: black;
@@ -114,6 +115,7 @@ form {
 }
 
 .krug1 {
+    box-shadow: 0 5px 40px;
     width: 180px;
     background: linear-gradient(to left top, var(--violet), var(--light-vilet));
     color: black;
@@ -151,6 +153,37 @@ form {
     margin-top: 20px;
 }
 
+.img1 {
+    width: 50px;
+    display: flex;
+    position: absolute;
+    margin-left: 245px;
+    margin-top: 25px;
+}
+
 .img2 {
     width: 50px;
+    display: flex;
+    position: absolute;
+    margin-left: 245px;
+    margin-top: 18px;
+}
+
+.img3 {
+    width: 50px;
+    display: flex;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 21px;
+}
+
+input:focus::placeholder {
+    transition: transform 0.3s linear, opasity 0.3s linear;
+    opacity: 0;
+    transform: translate();
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }
