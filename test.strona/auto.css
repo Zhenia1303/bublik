@@ -3,32 +3,70 @@
     padding: 0;
 }
 
-.gluwna{
+.gluwna {
     display: grid;
     grid-template-columns: 40% 60%;
 
 }
-.baner{
+
+.baner {
     background-color: #45517D;
     text-align: right;
     height: 60px;
     color: white;
     font-size: 120%;
 }
-h1{
+
+h1 {
     margin-bottom: 17px;
 }
-h2{
+
+h2 {
     padding-top: 20px;
 }
-.panele_lewy{
+
+.panele_lewy {
     background-color: #61B2EC;
     height: 500px;
 }
-.panele_prawy{
+
+.panele_prawy {
     background-color: #8EC9F2;
     height: 500px;
 }
-.spisok{
+
+.spisok {
     padding: 30px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    background-color: #45517D;
+}
+
+.niz {
+    color: orange;
+}
+
+td {
+    text-align: center;
+    width: 33%;
+}
+
+.p {
+    color: white;
+}
+
+.grind {
+    width: 60%;
+    height: 60%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 35%;
 }
