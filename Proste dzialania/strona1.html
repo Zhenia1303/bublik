@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PROSTE DIZAŁANIA</title>
+</head>
+
+<body>
+    <div class="glowa">
+        <h1>PROSTE DIZAŁANIA</h1>
+    </div>
+    <div class="calctwo">
+        <div class="calc">
+            <div class="gluwna">
+                <div class="inputone">
+                    <p class="p1">Podaj pierwsze liczbę:</p>
+                    <input id="a" type="number">
+                </div>
+                <div class="inputtwo">
+                    <p class="p1">Podaj drugą liczbę:</p>
+                    <input id="b" type="number">
+                </div>
+            </div>
+            <div class="dul1">
+                <div class="dul">
+                    <button onclick="dodawanie()">DODAWANIE</button>
+                    <button onclick="odejmowanie()">ODEJMOWANIE</button>
+                    <button onclick="mnozenie()">MNOŻENIE</button>
+                    <button onclick="dzielenie()">DZIELENIE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function dodawanie() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result = (Number(a) + Number(b));
+            var resultContainer = document.getElementById('c')
+            resultContainer.innerText = "RESULTAT:" + result
+        }
+        function mnozenie() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result = (Number(a) * Number(b));
+            var resultContainer = document.getElementById('c')
+            resultContainer.innerText = "RESULTAT:" + result
+        }
+        function odejmowanie() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result = (Number(a) - Number(b));
+            var resultContainer = document.getElementById('c')
+            resultContainer.innerText = "RESULTAT:" + result
+        }
+        function dzielenie() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result = (Number(a) / Number(b));
+            var resultContainer = document.getElementById('c')
+            resultContainer.innerText = "RESULTAT:" + result
+        }
+    </script>
+    <p id="result"></p>
+        <div id="c" class="result"></div>
+</body>
+
+</html>
