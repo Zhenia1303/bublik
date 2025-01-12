@@ -17,11 +17,11 @@
             <div class="gluwna">
                 <div class="inputone">
                     <p class="p1">Podaj pierwsze liczbę:</p>
-                    <input id="a" type="number">
+                    <input placeholder="0" id="a" type="number">
                 </div>
                 <div class="inputtwo">
                     <p class="p1">Podaj drugą liczbę:</p>
-                    <input id="b" type="number">
+                    <input placeholder="0" id="b" type="number">
                 </div>
             </div>
             <div class="dul1">
@@ -34,6 +34,12 @@
             </div>
         </div>
     </div>
+    <div class="front">
+        <h2 class="a">(a-b)</h2>
+        <h2 class="b">(a+b)</h2>
+        <h2 class="v">(a:b)</h2>
+        <h2 class="g">(axb)</h2>
+    </div>
     <script>
         function dodawanie() {
             var a = document.getElementById('a').value;
@@ -41,6 +47,17 @@
             var result = (Number(a) + Number(b));
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
+
+            if (a.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
+            if (b.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
         }
         function mnozenie() {
             var a = document.getElementById('a').value;
@@ -48,6 +65,17 @@
             var result = (Number(a) * Number(b));
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
+
+            if (a.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
+            if (b.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
         }
         function odejmowanie() {
             var a = document.getElementById('a').value;
@@ -55,6 +83,17 @@
             var result = (Number(a) - Number(b));
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
+
+            if (a.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
+            if (b.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr" 
+                event.preventDefault();
+            }
         }
         function dzielenie() {
             var a = document.getElementById('a').value;
@@ -62,10 +101,25 @@
             var result = (Number(a) / Number(b));
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
+
+            if (a.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr"
+                event.preventDefault();
+            }
+            if (b.trim() === '') {
+                var resultContainer = document.getElementById('c')
+                resultContainer.innerText = "Erorr"
+                event.preventDefault();
+            }
         }
     </script>
-    <p id="result"></p>
-        <div id="c" class="result"></div>
+    <div class="konec">
+        <div id="c" class="result">
+            <p id="result"></p>
+            <p>RESULTAT:</p>
+        </div>
+    </div>
 </body>
 
 </html>

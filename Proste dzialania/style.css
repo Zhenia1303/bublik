@@ -1,43 +1,112 @@
-h1{
+body {
+    background: linear-gradient(to right, var(--dark--), var(--light--), var(--dark--));
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
     text-align: center;
 }
-input{
+
+input {
     width: 120px;
     height: 15px;
 }
-.dul{
+
+.dul {
     height: 120px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
 }
-.dul1{
+
+.dul1 {
     margin-top: 16px;
     display: flex;
     justify-content: center;
 }
-#c{
-    text-align: center;
+
+#c {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 0.8;
+    border-radius: 5%;
+    background-color: rgb(207, 207, 207);
+    width: 280px;
+    height: 30px;
+    border: 1px solid;
 }
-.calc{
+
+.calc {
     opacity: 0.8;
     border-radius: 5%;
     background-color: rgb(207, 207, 207);
     display: flex;
     justify-content: center;
     width: 280px;
-    height: 150px;
+    height: 160px;
+    border: 1px solid;
 }
-p1{
+
+p1 {
     width: 150px;
 }
-.calctwo{
+
+.calctwo {
     display: flex;
     justify-content: center;
 }
-button{
+
+button {
     opacity: 0.9;
     background-color: yellow;
     border: 1px;
     border-radius: 5%;
+}
+
+.konec {
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --dark--: rgb(102, 102, 102);
+    --light--: rgb(194, 194, 194);
+}
+
+.front {
+    position: absolute;
+    color: rgb(189, 189, 189);
+    width: 100%;
+    height: 100%;
+}
+
+.a {
+    position: absolute;
+    ;
+    margin-left: 100px;
+}
+
+.b {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.v {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1100px;
+}
+
+.g {
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 1000px;
+}
+h1{
+    color: rgb(204, 204, 204);
+    -webkit-text-stroke: 2px rgb(41, 41, 41);
 }
