@@ -9,36 +9,40 @@
 </head>
 
 <body>
-    <div class="glowa">
-        <h1>PROSTE DIZAŁANIA</h1>
-    </div>
-    <div class="calctwo">
-        <div class="calc">
-            <div class="gluwna">
-                <div class="inputone">
-                    <p class="p1">Podaj pierwsze liczbę:</p>
-                    <input placeholder="0" id="a" type="number">
-                </div>
-                <div class="inputtwo">
-                    <p class="p1">Podaj drugą liczbę:</p>
-                    <input placeholder="0" id="b" type="number">
+    <div class="strona">
+        <div class="st">
+            <div class="glowa">
+                <h1>PROSTE DIZAŁANIA</h1>
+            </div>
+            <div class="calctwo">
+                <div class="calc">
+                    <div class="gluwna">
+                        <div class="inputone">
+                            <p class="p1">Podaj pierwsze liczbę:</p>
+                            <input placeholder="0" id="a" type="number">
+                        </div>
+                        <div class="inputtwo">
+                            <p class="p1">Podaj drugą liczbę:</p>
+                            <input placeholder="0" id="b" type="number">
+                        </div>
+                    </div>
+                    <div class="dul1">
+                        <div class="dul">
+                            <button onclick="dodawanie()">DODAWANIE</button>
+                            <button onclick="odejmowanie()">ODEJMOWANIE</button>
+                            <button onclick="mnozenie()">MNOŻENIE</button>
+                            <button onclick="dzielenie()">DZIELENIE</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="dul1">
-                <div class="dul">
-                    <button onclick="dodawanie()">DODAWANIE</button>
-                    <button onclick="odejmowanie()">ODEJMOWANIE</button>
-                    <button onclick="mnozenie()">MNOŻENIE</button>
-                    <button onclick="dzielenie()">DZIELENIE</button>
+            <div class="konec">
+                <div id="c" class="result">
+                    <p id="result"></p>
+                    <p>RESULTAT:</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="front">
-        <h2 class="a">(a-b)</h2>
-        <h2 class="b">(a+b)</h2>
-        <h2 class="v">(a:b)</h2>
-        <h2 class="g">(axb)</h2>
     </div>
     <script>
         function dodawanie() {
@@ -48,14 +52,9 @@
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
 
-            if (a.trim() === '') {
+            if (a.trim() === '' || b.trim() === '') {
                 var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
-                event.preventDefault();
-            }
-            if (b.trim() === '') {
-                var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
+                resultContainer.innerText = "Erorr"
                 event.preventDefault();
             }
         }
@@ -66,14 +65,9 @@
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
 
-            if (a.trim() === '') {
+            if (a.trim() === '' || b.trim() === '') {
                 var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
-                event.preventDefault();
-            }
-            if (b.trim() === '') {
-                var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
+                resultContainer.innerText = "Erorr"
                 event.preventDefault();
             }
         }
@@ -84,14 +78,9 @@
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
 
-            if (a.trim() === '') {
+            if (a.trim() === '' || b.trim() === '') {
                 var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
-                event.preventDefault();
-            }
-            if (b.trim() === '') {
-                var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr" 
+                resultContainer.innerText = "Erorr"
                 event.preventDefault();
             }
         }
@@ -102,24 +91,13 @@
             var resultContainer = document.getElementById('c')
             resultContainer.innerText = "RESULTAT:" + result
 
-            if (a.trim() === '') {
-                var resultContainer = document.getElementById('c')
-                resultContainer.innerText = "Erorr"
-                event.preventDefault();
-            }
-            if (b.trim() === '') {
+            if (a.trim() === '' || b.trim() === '') {
                 var resultContainer = document.getElementById('c')
                 resultContainer.innerText = "Erorr"
                 event.preventDefault();
             }
         }
     </script>
-    <div class="konec">
-        <div id="c" class="result">
-            <p id="result"></p>
-            <p>RESULTAT:</p>
-        </div>
-    </div>
 </body>
 
 </html>
