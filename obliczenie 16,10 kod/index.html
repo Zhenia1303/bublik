@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="krug"></div>
+    <div class="krug1"></div>
+    <form>
+        <img class="calc" src="img/calc.png" alt="calc">
+        <div>
+            <input id="a" placeholder="pierwszą" class="input-login" />
+        </div>
+        <div>
+            <input id="b" placeholder="drugą" class="input-password" />
+        </div>
+        <div class="long"></div>
+        <div>
+            <button> <a onclick="login()">OBLICZENIE</a></button>
+        </div>
+    </form>
+    <script>
+        function login() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var g = (a + b);
+            alert(g)
+
+            if (/^[0-9A-Fa-f]+$/.test(g)) {
+                var f = parseInt(g, 16);
+                alert(f)
+            }
+            else {
+                g != (/^[0-9A-Fa-f]+$/);
+                alert("Error");
+            }
+        }
+    </script>
+</body>
+
+</html>
