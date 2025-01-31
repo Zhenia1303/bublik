@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top{
+    background-color: green;
+    color: white;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    transform: scale(-1, 1);
+    box-shadow: 10px 10px 10px rgb(56, 56, 56);
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+.center{
+    margin-left: 100px;
+}
+.duwn{
+    height: 100px;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#button-duwn{
+    height: 50px;
+    color: green;
+}
+h3{
+    color: white;
+}
+.input-{
+    margin-top: 10px;
+    width: 250px;
+    display: flex;
+}
+ul{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.but{
+    margin-top: 20px;
+    height: 30px;
+    width: 70px;
+}
+.inp{
+    margin-top: 25px;
+}
+.inp1{
+    margin-right: 10000px;
+}
+
