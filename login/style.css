@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+body {
+    background: linear-gradient(to left, var(--black), var(--grey), var(--white));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --grey: rgb(131, 131, 131);
+    --white: rgb(206, 206, 206);
+    --black: rgb(22, 22, 22);
+}
+
+.input-login {
+    opacity: 0.9;
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var(--black), var(--white));
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px;
+    border-radius: 20px;
+}
+
+.input-password {
+    opacity: 0.9;
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var(--black), var(--white));
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px;
+    border-radius: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    opacity: 0.9;
+    box-shadow: 0 10px 30px black;
+    background: linear-gradient(to left top, var(--black), var(--white));
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-radius: 20px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+button::after {
+    background-color: white;
+    content: '';
+    height: 80px;
+    left: -20px;
+    position: absolute;
+    top: 0px;
+    transform: skew(15deg);
+    width: 20px;
+    transition: transform 1s;
+}
+
+button:hover::after {
+    transform: translateX(120px);
+}
+
+form {
+    opacity: 0.7;
+    background: linear-gradient(to left top, var(--black), var(--grey));
+    box-shadow: 0 10px 30px black;
+    width: 350px;
+    height: 235px;
+    text-align: center;
+    border: 1px;
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: white;
+
+}
+
+.long {
+    background-color: white;
+    width: 90%;
+    height: 3px;
+    border-radius: 90%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user {
+    width: 30%;
+    margin-top: 20px;
+}
+
+input:focus::placeholder {
+    transition: transform 0.3s linear, opasity 0.3s linear;
+    opacity: 0;
+    transform: translate();
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
