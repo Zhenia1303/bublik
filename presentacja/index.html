@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezentacja: Moc prądu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="slides-wrapper">
+
+    <div class="slide active">
+        <h1>Moc prądu</h1>
+        <h4>Autorzy: Yevhenii Zhelieznov, Oleksandr Zhelieznov, Arsenii Siversky</h4>
+        <h5>Klasa: 2c</h5>
+        <p>Moc prądu jest podstawowym parametrem elektrycznym, który określa ilość energii przekazywanej przez obwód w jednostce czasu.</p>
+        <img id="flash" src="img/flash.webp" alt="flash">
+    </div>
+
+    <div class="slide">
+        <h1>Definicja mocy</h1>
+        <p>Moc elektryczna (P) to ilość energii zużytej lub dostarczonej przez obwód w jednostce czasu.
+            Oblicza się ją ze wzoru: <strong>P = U × I</strong>, gdzie:</p>
+        <ul>
+            <li>P – moc w watach (W)</li>
+            <li>U – napięcie w woltach (V)</li>
+            <li>I – natężenie prądu w amperach (A)</li>
+        </ul>
+        <p>Moc informuje nas, ile energii jest zużywane przez urządzenie elektryczne w danym czasie. Na przykład żarówka 60W zużywa 60 watów energii elektrycznej.</p>
+    </div>
+
+    <div class="slide">
+        <h1>Moc czynna</h1>
+        <p>Moc czynna (P) to ta część mocy, która wykonuje rzeczywistą pracę w obwodzie elektrycznym.
+            Jest to energia przekształcana np. w ciepło, światło lub ruch mechaniczny.
+            Moc czynna jest mierzona w watach (W). Przykłady urządzeń zużywających moc czynną:</p>
+        <ul>
+            <li>Żarówki i lampy LED</li>
+            <li>Silniki elektryczne</li>
+            <li>Grzejniki elektryczne</li>
+        </ul>
+        <p>Pomiar mocy czynnej jest istotny, ponieważ pokazuje faktyczne zużycie energii.</p>
+    </div>
+
+    <div class="slide">
+        <h1>Moc bierna</h1>
+        <p class="bierna">Moc bierna (Q) nie wykonuje pracy użytecznej, ale jest niezbędna do wytworzenia pola magnetycznego w
+            urządzeniach indukcyjnych, takich jak transformatory, silniki czy cewki.
+            Jednostką mocy biernej jest var (volt-amper-reaktywny). </p>
+        <img src="img/Moc_czynna_i_bierna.png" alt="bierna">
+        <p class="bierna"> Obecność mocy biernej powoduje straty w sieci i wymaga kompensacji, np. przez kondensatory.</p>
+    </div>
+
+    <div class="slide">
+        <h1>Moc pozorna</h1>
+        <p>Moc pozorna (S) łączy moc czynną i bierną i określa całkowite obciążenie w sieci. Oblicza się ją ze wzoru:</p>
+        <p><strong>S = √(P² + Q²)</strong></p>
+        <p>Jednostką mocy pozornej jest voltamper (VA).
+            Moc pozorna jest używana przy projektowaniu instalacji, ponieważ przewody i zabezpieczenia muszą wytrzymać
+            pełne obciążenie (łącznie z mocą bierną).</p>
+    </div>
+
+    <div class="slide">
+        <h1>Wzory podstawowe</h1>
+        <div class="for">
+            <img class="formula" src="img/form.png" alt="formula">
+            <img class="formula" src="img/moc_elektryczna.jpg" alt="moc">
+            <img class="formula" src="img/formula.bmp" alt="formula">
+        </div>
+        <p>Do obliczeń mocy w obwodach prądu stałego stosuje się podstawowe wzory:</p>
+        <ul>
+            <li>P = U × I – obliczenie mocy</li>
+            <li>I = P / U – obliczenie natężenia prądu</li>
+            <li>U = P / I – obliczenie napięcia</li>
+        </ul>
+        <p>W obwodach prądu zmiennego dodatkowo uwzględnia się współczynnik mocy cosφ, który zmniejsza moc czynną w obecności mocy biernej.</p>
+    </div>
+
+    <div class="slide">
+        <h1>Przykłady obliczeń</h1>
+        <img id="light" src="img/light.png" alt="light">
+        <p>Przykład 1: żarówka 12V, 2A → P = 12 × 2 = 24 W</p>
+        <p>Przykład 2: urządzenie 230V, moc 460 W → I = 460 / 230 = 2 A</p>
+        <p>Przykład 3: silnik indukcyjny 1000 W, moc bierna 200 var → moc pozorna: S = √(1000² + 200²) ≈ 1020 VA</p>
+    </div>
+
+    <div class="slide">
+        <h1>Podsumowanie</h1>
+        <p>Moc prądu jest kluczowa przy projektowaniu instalacji elektrycznych.
+            Dzięki znajomości mocy czynnej, biernej i pozornej można:</p>
+        <ul>
+            <li>Dobierać odpowiednie przewody i bezpieczniki</li>
+            <li>Zmniejszać straty energii</li>
+            <li>Unikać przeciążenia urządzeń</li>
+            <li>Efektywnie planować instalacje przemysłowe i domowe</li>
+        </ul>
+        <p>Znajomość mocy jest podstawą bezpiecznego i ekonomicznego użytkowania energii elektrycznej.</p>
+    </div>
+
+    <div class="slide-number" id="slide-number">Slajd nr 1</div>
+
+    <div class="nav-buttons">
+        <div></div>
+        <button id="prev">Poprzedni</button>
+        <button id="next">Następny</button>
+        <div></div>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
